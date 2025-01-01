@@ -16,14 +16,14 @@ dotenv.config();  // Load environment variables
 
 
 
-const credentials = JSON.parse(fs.readFileSync(join(__dirname, '../credentials.json')));
+//const credentials = JSON.parse(fs.readFileSync(join(__dirname, '../credentials.json')));
 
 
 
 
 // Google Sheets API setup
 const auth = new google.auth.GoogleAuth({
-    credentials,  // The downloaded service account key file
+   // credentials,  // The downloaded service account key file
     scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
